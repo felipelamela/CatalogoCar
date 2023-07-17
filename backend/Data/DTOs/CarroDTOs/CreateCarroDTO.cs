@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace backend.Data.DTOs
+namespace backend.Data.DTOs.CarroDTOs
 {
     public class CreateCarroDTO
     {

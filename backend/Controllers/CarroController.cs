@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using backend.Models;
 using backend.Data;
-using backend.Data.DTOs;
 using AutoMapper;
+using backend.Data.DTOs.CarroDTOs;
+using backend.Data.DTOs;
 
 namespace backend.Controllers;
 
@@ -35,10 +36,13 @@ public class CarroController : ControllerBase
             );
     }
 
+
+
     [HttpGet]
-    public IEnumerable<Carro> ListarCarros([FromQuery] int skip = 0, int take = 10)
+    public IEnumerable<ReadCarroDTO> ListarCarros([FromQuery] int skip = 0, int take = 10)
     {
-        return _context.Carros.Skip(skip).Take(take);
+        var carros = _context.Carros.Skip(skip).Take(take);
+        return _mapper.Map<List<ReadCarroDTO>>(carros);
     }
 
 
@@ -48,8 +52,10 @@ public class CarroController : ControllerBase
         var carro = _context.Carros
               .FirstOrDefault(carro => carro.Id == id);
         if (carro == null) return NotFound();
-        return Ok(carro);
+        var carroDTO = _mapper.Map<ReadCarroDTO>(carro);
+        return Ok(carroDTO);
     }
+
 
     [HttpPut("{id}")]
     public IActionResult AtualizaCarro(
@@ -62,5 +68,18 @@ public class CarroController : ControllerBase
         _context.SaveChanges();
         return NoContent();
     }
+
+
+    [HttpDelete("{id}")]
+    public IActionResult DeletarCarro(int id)
+    {
+        var carro = _context.Carros.FirstOrDefault(
+            carro => carro.Id == id);
+        if (carro == null) return NotFound();
+        _context.Remove(carro);
+        _context.SaveChanges();
+        return NoContent();
+    }
+
 
 }

@@ -1,4 +1,6 @@
 using backend.Data;
+using backend.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +13,23 @@ builder.Services.AddDbContext<CarroContext>(opts =>
         ServerVersion.AutoDetect(CONNECTION)
         ));
 
-
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+///////////////////////////////////////////////////////////////////////////
+
+var USERCONNECTION = builder.Configuration.GetConnectionString("UserConnection");
+
+builder.Services.AddDbContext<UserContext>(opts =>
+    opts.UseMySql(
+        USERCONNECTION,
+        ServerVersion.AutoDetect(USERCONNECTION)
+
+        ));
+builder.Services
+    .AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<UserContext>()
+    .AddDefaultTokenProviders();
+
 
 
 builder.Services.AddControllers();
