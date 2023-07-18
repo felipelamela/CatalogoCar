@@ -1,23 +1,21 @@
-
 interface TitleProprs {
-  Text: string,
-  TypeTag: keyof JSX.IntrinsicElements
+  Text: string;
+  TypeTag: keyof JSX.IntrinsicElements;
 }
 
-const Title:React.FC<TitleProprs> = ({ Text, TypeTag }) => {
+const Title: React.FC<TitleProprs> = ({ Text, TypeTag }) => {
   return (
     <>
       <TypeTag>{Text}</TypeTag>
       <style jsx>{`
-        ${TypeTag}{
-          font-size: .95rem;
+        ${TypeTag} {
+          padding: .3rem .8rem;
+          font-size: 0.95rem;
           font-weight: bold;
-          padding: .5rem 1rem .2rem; 
         }
       `}</style>
-    
     </>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

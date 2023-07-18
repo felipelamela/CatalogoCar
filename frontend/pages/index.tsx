@@ -1,9 +1,11 @@
-import SectionCards from "../src/Components/Compositions/SectionCards/SectionCards";
-
+import Main from "../src/Components/Compositions/Main/Main"
 export default function Page() {
     return (
+      <div>
+        <Main />
 
-      <SectionCards />
+      </div>
+      //<SectionCards />
 
     )
   }
