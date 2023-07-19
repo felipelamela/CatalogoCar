@@ -4,8 +4,6 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps> = ({ children, typeText = "" }) => {
-
-
   return (
     <>
       <p className={typeText}>{children}</p>
@@ -17,7 +15,7 @@ const Text: React.FC<TextProps> = ({ children, typeText = "" }) => {
         padding: 1rem .8rem .5rem;
         font-size:1.4rem;
         font-weight:;
-        color: blue;
+        color: #3374db;
       }
     `}</style>
     </>

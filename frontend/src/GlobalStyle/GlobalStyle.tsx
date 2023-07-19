@@ -3,6 +3,10 @@ import React from "react";
 const GlobalStyle = () => {
   return (
     <style global jsx>{`
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
     html,
     body,
     div,
@@ -82,6 +86,7 @@ const GlobalStyle = () => {
     summary,
     time,
     mark,
+    button,
     audio,
     video {
       margin: 0;
@@ -90,6 +95,8 @@ const GlobalStyle = () => {
       font-size: 100%;
       font: inherit;
       vertical-align: baseline;
+      font-family:roboto;
+      color:#676767;
     }
     /* HTML5 display-role reset for older browsers */
     article,

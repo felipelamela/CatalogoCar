@@ -3,39 +3,39 @@
 import React from 'react'
 import SectionCards from '../SectionComponents/SectionCards/SectionCards'
 import SectionFiltro from '../SectionComponents/SectionFiltro/SectionFiltro'
+import SectionSearch from '../SectionComponents/SectionSearch/SectionSearch'
 
 const Main = () => {
   const [ativaFiltro, setAtivaFiltro] = React.useState<boolean>(true)
-  const [listaFiltros, setListaFiltros] = React.useState<string[] | null>(null)
+  const [listaFiltros, setListaFiltros] = React.useState<string[] | null>([])
 
   return (
     <>
       <main>
+        <SectionSearch
+          ativaFiltro={ativaFiltro}
+          setAtivaFiltro={setAtivaFiltro}
+          listaFiltros={listaFiltros}
+          setListaFiltros={setListaFiltros}
+        />
 
-
-        <div>
-          <button onClick={e => setAtivaFiltro(!ativaFiltro)}>Reduzir</button>
-
-          {listaFiltros && listaFiltros.map((filtro)=>(
-            <p>{filtro}</p>
-          ))}
-
-        </div>
         <section>
-          {ativaFiltro ? <SectionFiltro /> : null}
-          <SectionCards />
+          {ativaFiltro ? <SectionFiltro listaFiltros={listaFiltros} setListaFiltros={setListaFiltros} /> : null}
+          <SectionCards
+            listaFiltros={listaFiltros}
+            setListaFiltros={setListaFiltros}
+          />
         </section>
-
-
 
 
       </main>
       <style jsx>{`
-        main{
-          display:inline;
-        }
         section{
-          display:flex;w
+          margin: 0 auto;
+          max-width: 1300px;
+          display:flex;
+          box-sizing:border-box;
+          gap:20px;
         }
       
       `}</style>

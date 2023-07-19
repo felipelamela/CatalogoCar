@@ -1,13 +1,22 @@
-import Link from 'next/link'
-
-interface LinkMenuProps{
-  Text:string 
+interface LinkMenuProps {
+  Text: string
 }
 
 
-const LinkMenu:React.FC<LinkMenuProps> = ({Text}) => {
+const LinkMenu: React.FC<LinkMenuProps> = ({ Text }) => {
   return (
-    <Link href="/">{Text}</Link>
+    <>
+      <a className='linksMenu' href="/">{Text}</a>
+      <style jsx>{`
+          a{
+            font-size:1.2rem;
+            text-decoration:none;
+            padding:.5rem .8rem;
+            margin:5px;
+
+          }
+      `}</style>
+    </>
   )
 }
 

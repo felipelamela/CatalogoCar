@@ -1,6 +1,17 @@
 import Text from "../../GlobalComponents/Text/Text"
 import Title from '../../GlobalComponents/Title/Title'
 
+interface CardCarProps {
+  id: number,
+  marca: string
+  modelo: string
+  km: string
+  preco: string
+  foto: string
+}
+
+
+
 const CardCar = () => {
   return (
     <>
@@ -15,7 +26,7 @@ const CardCar = () => {
       </div>
       <style jsx>{`
       div{
-        max-width:300px;
+        max-width:310px;
         border-radius: 10px;
         box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
       }
