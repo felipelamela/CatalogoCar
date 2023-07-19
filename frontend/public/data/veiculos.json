@@ -1,8 +1,210 @@
-[{
-    "id": 0,
-    "marca": " ",
-    "modelo": " ",
-    "ano": " ",
-    "preco": " ",
-    "foto": " "
-}]
+[
+    {
+        "id": 0,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 1,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 2,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 3,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 4,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 5,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 6,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 7,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 8,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 9,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 10,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 11,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 12,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 13,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 14,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 15,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 16,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 17,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 18,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 18,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 20,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 21,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 22,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 23,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 24,
+        "marca": "Mini Countryman S ALL4 TURBO",
+        "modelo": "2015",
+        "km": "65241",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    },
+    {
+        "id": 25,
+        "marca": "Land Rover Range Rover Sport HSE V6 TURBO",
+        "modelo": "2020",
+        "km": "21005",
+        "preco": "112.377",
+        "foto": "/img/carro.webp"
+    }
+]
